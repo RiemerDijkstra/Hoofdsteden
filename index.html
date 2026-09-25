@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hoofdsteden</title>
+<meta name="description" content="Oefen de hoofdsteden van de wereld met omtrek en vlag.">
+<meta name="theme-color" content="#ffffff">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Hoofdsteden">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preload" href="fonts/baloo-2-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+
+  <!-- HOME -->
+  <section class="screen on" id="home">
+    <div class="bar">
+      <div class="brand"><span class="brand-dot"></span>Hoofdsteden</div>
+      <div class="grow"></div>
+      <button class="icon-btn" data-sound-toggle></button>
+      <div class="mode" data-mode-switch></div>
+    </div>
+    <div class="home-mid">
+      <div class="counter" aria-label="Aantal vragen per ronde">
+        <button class="key" id="minus" aria-label="Minder vragen">−</button>
+        <div class="count-val"><b id="count">10</b><span>vragen</span></div>
+        <button class="key" id="plus" aria-label="Meer vragen">+</button>
+      </div>
+      <button class="pie-btn" id="start" aria-label="Start ronde"></button>
+      <div class="legend" id="legend"></div>
+      <div class="best" id="best"></div>
+    </div>
+    <button class="reset" id="reset">Voortgang wissen</button>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="screen" id="quiz">
+    <div class="bar">
+      <button class="icon-btn" id="quit" aria-label="Stoppen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      <div class="progress" aria-hidden="true"><i id="prog"></i></div>
+      <div class="streak" id="streak" aria-live="polite"></div>
+      <div class="mode" data-mode-switch></div>
+    </div>
+    <div class="stage" id="stage"></div>
+    <p class="ask" id="ask">Wat is de hoofdstad?</p>
+    <div class="answer" id="answer"></div>
+    <button class="key green next" id="next">Verder<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6l6 6-6 6"/></svg></button>
+  </section>
+
+  <!-- EINDE -->
+  <section class="screen" id="end">
+    <div class="bar"><div class="brand"><span class="brand-dot"></span>Hoofdsteden</div></div>
+    <div class="end-mid">
+      <div class="score" id="score"></div>
+      <div class="end-msg" id="endmsg"></div>
+      <div class="end-streak" id="endstreak"></div>
+      <div class="misses" id="misses"></div>
+      <div class="end-actions">
+        <button class="key" id="tohome">Home</button>
+        <button class="key green" id="again">Nog een ronde</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
