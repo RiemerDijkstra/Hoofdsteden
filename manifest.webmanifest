@@ -1,7 +1,7 @@
 {
   "name": "Hoofdsteden",
   "short_name": "Hoofdsteden",
-  "description": "Oefen de hoofdsteden van de wereld met omtrek en vlag.",
+  "description": "Oefen hoofdsteden en vlaggen van de wereld.",
   "lang": "nl",
   "start_url": "./",
   "scope": "./",

@@ -1,5 +1,5 @@
 // Service worker: maakt de app offline bruikbaar. Verhoog VERSION na elke update.
-const VERSION = 'hoofdsteden-v2';
+const VERSION = 'hoofdsteden-v3';
 const FILES = [
   './', './index.html', './style.css', './app.js', './data.js', './manifest.webmanifest',
   './icons/icon-192.png', './icons/icon-512.png', './icons/apple-touch-icon.png', './icons/icon-maskable-512.png',

@@ -1,6 +1,13 @@
 # Hoofdsteden
 
-Een kleine oefenapp voor de hoofdsteden van de wereld. Je ziet de omtrek en de vlag van een land en kiest of typt de hoofdstad. Landen die je vaak goed hebt komen minder vaak terug, landen die je fout hebt vaker (spaced repetition, Leitner-systeem).
+Een kleine oefenapp voor hoofdsteden en vlaggen, in het Nederlands en Engels.
+
+Spelmodi:
+- **Land → hoofdstad:** je ziet de omtrek en de vlag, en raadt de hoofdstad.
+- **Hoofdstad → land:** met de wisselknop draai je het om. Je ziet de hoofdstad en de omtrek (geen vlag) en raadt het land.
+- **Vlag → land:** je ziet een vlag en raadt het land.
+
+Bij elke modus kun je kiezen uit vier opties of zelf typen. Landen die je vaak goed hebt komen minder vaak terug, landen die je fout hebt vaker (spaced repetition met Leitner-niveaus). Elk land kan in elke ronde voorkomen.
 
 ## Publiceren op GitHub Pages
 
@@ -22,7 +29,7 @@ Open de map in een terminal en start een simpele server, bijvoorbeeld `python3 -
 
 ## Updates doorvoeren
 
-Pas je iets aan? Verhoog dan `VERSION` bovenin `sw.js` (bijvoorbeeld naar `hoofdsteden-v3`), anders blijven telefoons de oude versie uit de cache tonen.
+Pas je iets aan? Verhoog dan `VERSION` bovenin `sw.js` (bijvoorbeeld naar `hoofdsteden-v4`), anders blijven telefoons de oude versie uit de cache tonen.
 
 ## Bestanden
 
@@ -30,8 +37,8 @@ Pas je iets aan? Verhoog dan `VERSION` bovenin `sw.js` (bijvoorbeeld naar `hoofd
 | --- | --- |
 | `index.html` | De pagina |
 | `style.css` | Vormgeving |
-| `app.js` | Spellogica, leermethode, geluid, reeks |
-| `data.js` | Alle landen: omtrek, vlag, hoofdstad |
+| `app.js` | Spellogica, leermethode, geluid, reeks, teksten NL/EN |
+| `data.js` | Alle landen: omtrek, vlag, namen en hoofdsteden (NL/EN) |
 | `sw.js` | Service worker voor offline gebruik |
 | `manifest.webmanifest` | Maakt de app installeerbaar |
 | `icons/` | App-iconen |
